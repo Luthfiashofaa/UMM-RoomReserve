@@ -1,0 +1,275 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+header {
+  background-color: #990000;
+  color: white;
+  padding: 1px 0;
+  text-align: center;
+}
+
+header .navbar {
+  background-color: #ffffff;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 30px;
+  margin-right: 10px;
+}
+
+.title {
+  text-align: center;
+  padding: 0%;
+}
+
+.title2 {
+  padding: -20pt;
+}
+
+.cards {
+  width: 90%;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Bayangan di semua sisi */
+  overflow: hidden;
+  text-align: center;
+  height: 480px;
+  margin-left: 60px;
+  margin-bottom: 50px;
+}
+
+.card {
+  background-color: #d9d9d9;
+  width: 100%;
+  height: 12%;
+  text-align: left;
+  border-radius: 8px 8px 0 0;
+  align-items: center;
+}
+
+.card__content {
+  padding: 10px;
+}
+
+.card-title {
+  position: absolute;
+  padding: 5px;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.card-subtitle {
+  position: absolute;
+  padding-top: 30px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.form {
+  display: flex;
+  height: 480px; /* Tetapkan tinggi tetap */
+}
+
+.leftside, .rightside {
+  width: 50%;
+  margin: 10px;
+  overflow: hidden;
+  text-align: center;
+  height: 100%; /* Gunakan 100% untuk menyesuaikan dengan tinggi elemen induk */
+  box-sizing: border-box; /* Pastikan padding dan border dihitung dalam lebar dan tinggi */
+}
+
+.input-field-date {
+  background-color: white; /* Warna abu dengan opasitas 50% */
+  border: 2px solid #F1F0F0;
+  border-radius: 5px;
+  width: 90%;
+  margin-bottom: 20px;
+  padding: 1px;
+  margin-left: 10pt;
+}
+
+.input-field-time {
+  background-color: white; /* Warna abu dengan opasitas 50% */
+  border: 2px solid #F1F0F0;
+  border-radius: 5px;
+  width: 15%;
+  margin-bottom: 20px;
+  padding: 1px;
+  margin-left: 10pt;
+}
+
+.input-field {
+  background-color: white; /* Warna abu dengan opasitas 50% */
+  border: 2px solid #F1F0F0;
+  border-radius: 5px;
+  width: 95%;
+  margin-bottom: 20px;
+  padding: 1px;
+  margin-left: 10pt;
+}
+
+.input-field-desc {
+  background-color: white; /* Warna abu dengan opasitas 50% */
+  border: 2px solid #F1F0F0;
+  border-radius: 5px;
+  width: 95%;
+  margin-bottom: 20px;
+  padding: 1px;
+  padding-bottom: 90px;
+  margin-left: 10pt;
+}
+
+
+.input-field input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent; /* Hapus warna latar belakang input */
+  outline: none;
+  font-size: 16px;
+}
+
+.input-field-date input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent; /* Hapus warna latar belakang input */
+  outline: none;
+  font-size: 16px;
+}
+
+.input-field-time input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent; /* Hapus warna latar belakang input */
+  outline: none;
+  font-size: 16px;
+}
+
+.input-field-desc input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent; /* Hapus warna latar belakang input */
+  outline: none;
+  font-size: 16px;
+}
+
+.input-field-date input::placeholder {
+  color: #d9d9d9; /* Warna placeholder */
+}
+
+.input-field-desc input::placeholder {
+  color: #d9d9d9; /* Warna placeholder */
+}
+
+.input-field input::placeholder {
+  color: #d9d9d9; /* Warna placeholder */
+}
+
+.input-field-time input::placeholder {
+  color: #d9d9d9; /* Warna placeholder */
+}
+.leftside .input {
+  margin-bottom: -10px;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.rightside .input {
+  margin-bottom: -10px;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.tanggal{
+  display: flex;
+  margin-bottom: -15pt;
+  margin-top: -10pt;
+}
+
+.upload{
+  display: flex;
+}
+
+.uploadCard {
+  background-color: #EEF9FF;
+  width: 100pt;
+  height: 100pt;
+  text-align: left;
+  border-radius: 5px 5px 5px 5px;
+  align-items: center;
+  margin-left: 16px;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid #48BDFF;
+}
+
+.uploadCard img {
+  padding-top: 15pt;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: -15px;
+}
+
+.upload__set{
+  padding-right: 40pt;
+}
+
+.button {
+  background-color: #990000; /* Red color */
+  color: white;
+  padding: 8px 35px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-left: 800pt;
+  margin-bottom: 30pt;
+}
+
+.img_background{
+  position: fixed;
+}
+
+.img_background img{
+  width: 30%;
+  height: auto;
+  align-items: center;
+  padding-top: 95px;
+  padding-left: 35%;
+}

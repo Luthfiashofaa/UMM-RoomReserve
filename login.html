@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMM RoomReserve</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://kit.fontawesome.com/your-font-awesome-kit-id.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="D:/Luthfia/University/Semester 4/Rekayasa Perangkat Lunak/UMM RoomReserve/logoUMM.PNG" alt="Logo UMM">
+                <h2>UMM RoomReserve</h2>
+            </div>
+        </div>
+    </header>
+
+    <section class="title">
+        <div class="h1">
+            <h1>Welcome to UMM RoomReserve</h1>
+        </div>
+    </section>
+
+    <section class="title">
+        <div class="h1">
+            <h2>Login to UMM RoomReserve</h2>
+        </div>
+    </section>
+
+    <section class="form-container">
+        <div class="form">
+            <div class="h3">
+                <h3>Username/NIM</h3>
+            </div>
+            <div class="input-field">
+                <input type="text" placeholder="Masukkan Username/NIM">
+            </div>
+
+            <div class="h3">
+                <h3>Password/PIC</h3>
+            </div>
+            <div class="input-field">
+                <input type="password" id="passwordInput" placeholder="Masukkan Password/PIC">
+                <span class="toggle-password" onclick="togglePasswordVisibility()">
+                    <i class="fas fa-eye"></i>
+                </span>
+            </div>
+            <a href="#" class="forgot-password">Lupa Password?</a>
+            <button type="button" onclick="loginUser()">Login</button>
+        </div>
+    </section>
+    
+    <script src="login.js"></script>
+</body>
+</html>

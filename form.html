@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UMM RoomReserve</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="form.css">
+    <!-- jQuery UI CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <!-- jQuery Timepicker CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.13.18/jquery.timepicker.min.css">
+</head>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="D:/Luthfia/University/Semester 4/Rekayasa Perangkat Lunak/UMM RoomReserve/logoUMM.PNG" alt="Logo UMM">
+                <h2>UMM RoomReserve</h2>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="title">
+            <div class="h1">
+            <h1>Form Peminjaman Ruangan</h1>
+            <h5>Wajib diisi apabila ingin melakukan peminjaman ruangan</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="card">
+            <h4 class="card-title">Informasi Peminjaman</h4>
+            <h6 class="card-subtitle">(* ) wajib diisi</h6>
+        </div>
+        
+        <div class="form">
+            <div class="leftside">
+                <div class="input">
+                    <h5>Nama (*)</h5>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Type Here">
+                </div>
+
+                <div class="input">
+                    <h5>NIM (*)</h5>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Type Here">
+                </div>
+                
+
+                <div class="upload">
+                    <div class="upload__set">
+                        <div class="input">
+                            <h5>Upload KTM (*)</h5>
+                        </div>
+                
+                        <div class="uploadCard">
+                            <!-- Input untuk memilih file PDF -->
+                            <input type="file" id="ktmFile" accept=".pdf" style="display: none;">
+                            <label for="ktmFile">
+                                <img src="D:/Luthfia/University/Semester 4/Rekayasa Perangkat Lunak/UMM RoomReserve/upload.png" alt="upload">
+                                <h5>Choose File</h5>
+                            </label>
+                        </div>
+                    </div>
+                
+                    <div class="upload__set">
+                        <div class="input">
+                            <h5>Upload Surat Rekomendasi (*)</h5>
+                        </div>
+                
+                        <div class="uploadCard">
+                            <!-- Input untuk memilih file PDF -->
+                            <input type="file" id="suratRekomendasiFile" accept=".pdf" style="display: none;">
+                            <label for="suratRekomendasiFile">
+                                <img src="D:/Luthfia/University/Semester 4/Rekayasa Perangkat Lunak/UMM RoomReserve/upload.png" alt="upload">
+                                <h5>Choose File</h5>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+
+            <div class="rightside">
+                <div class="input">
+                    <h5>Deskripsi Acara (*)</h5>
+                </div>
+                <div class="input-field-desc">
+                    <input type="text" placeholder="Type Here">
+                </div>     
+                
+                <div class="tanggal">
+                    <div class="dateTitle">
+                        <div class="input">
+                            <h5>Tanggal Peminjaman (*)</h5>
+                        </div>
+                        <div class="input-field-date">
+                            <input type="text" class="datepicker" placeholder="dd/mm/yyyy">
+                        </div>
+                    </div>
+                    <div class="dateTitle">
+                        <div class="input">
+                            <h5>Waktu (*)</h5>
+                        </div>
+                        <div class="input-field-date">
+                            <input type="text" class="timepicker" placeholder="Type Here">
+                        </div>
+                    </div>
+                </div>
+                
+
+
+                <div class="tanggal">
+                    <div class="dateTitle">
+                        <div class="input">
+                            <h5>Tanggal Selesai (*)</h5>
+                        </div>
+                        <div class="input-field-date">
+                            <input type="text" class="datepicker" placeholder="dd/mm/yyyy">
+                        </div>
+                    </div>
+                    <div class="dateTitle">
+                        <div class="input">
+                            <h5>Waktu (*)</h5>
+                        </div>
+                        <div class="input-field-date">
+                            <input type="text" placeholder="Type Here">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="buttonSend">
+        <button class="button">Kirim</button>
+    </section>
+    
+    <script>
+        $(document).ready(function() {
+            // Datepicker
+            $('.datepicker').datepicker({
+                dateFormat: 'dd/mm/yy', // Format tanggal
+                changeMonth: true,
+                changeYear: true,
+                yearRange: '-100:+0' // Rentang tahun
+            });
+    
+            // Timepicker
+            $('.timepicker').timepicker({
+                timeFormat: 'HH:mm', // Format waktu
+                interval: 15, // Interval waktu (misalnya, 15 menit)
+                scrollbar: true
+            });
+        });
+    </script>
+    
+
+</body>
+</html>

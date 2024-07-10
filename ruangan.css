@@ -1,0 +1,230 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #990000;
+  color: white;
+  padding: 1px 0;
+  text-align: center;
+}
+
+header .navbar {
+  background-color: #ffffff;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .hamburger {
+    justify-content: flex-end; /* Memposisikan konten ke kanan */
+    align-items: center; /* Mengatur konten agar berada di tengah vertikal */
+}
+
+.hamburger img {
+    height: 20px; /* Sesuaikan tinggi ikon sesuai kebutuhan */
+    padding-left: 890px;
+}
+
+
+  .logo img {
+    height: 30px;
+    margin-right: 10px;
+  }
+
+
+
+.hero {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 200px 0;
+  }
+  
+  .hero h1,
+  .hero h2 {
+    margin: 0;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+  }
+  
+  .hero h2 {
+    font-size: 32px;
+  }
+  
+.hero .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Menyesuaikan lebar sesuai kebutuhan */
+    height: 70%; /* Mengubah tinggi menjadi 100% */
+    background-size: cover;
+    background-position: center;
+    opacity: 1; /* Mengubah opacity menjadi 1 atau bisa dihapus jika tidak diperlukan */
+}
+
+
+.title{
+    text-align: center;
+    margin-top: -100px;
+  }
+  
+  .title h2{
+    font-size: 2em;
+  }
+
+
+
+  .card {
+    width: 250px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card-status {
+    color: green; /* Green for available */
+}
+
+.card-status.booked {
+    color: red; /* Red for booked */
+}
+
+.button {
+    background-color: #990000; /* Red color */
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.container1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+
+
+
+.popup{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s;
+}
+
+.popup__content {
+  width: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .2);
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(.25);
+  opacity: 0;
+
+  transition: all 0.5s .1s;
+}
+
+.popup__close:link, .popup__close:visited{
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  text-decoration: none;
+  color: #000;
+  font-size: 30px;
+  display: inline-block;
+  line-height: 1;
+  transition: all .3s;
+}
+
+.popup__close:hover, .popup__close:active{
+  color: #555; 
+}
+
+.popup__img{
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.popup__header {
+  margin-top: 20px;
+}
+
+.popup .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.popup .content li {
+  margin-bottom: 10px;
+}
+
+#popup:target{
+   opacity: 1;
+   visibility: visible;
+}
+
+#popup:target .popup__content{
+  opacity: 1;
+  transform: translate(-50%,-50%) scale(1);
+}
+
